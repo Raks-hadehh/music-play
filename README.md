@@ -1,15 +1,39 @@
-<h1 align="centre">DAISYXMUSIC V5.5 🎵</h1> 
+# yakari voice chat music play bot 
+<p align="center"><a href="https://t.me/slbotzone"><img src="https://telegra.ph/file/db4af75f7565a28a57b9d.jpg" width="500"></a></p>
 
-## old version
 
-### A bot that can play music on Telegram Group and Channel Voice Chats
-#### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
-### Available on telegram as [@DaisyXbot](https://t.me/daisyxbot)
+### you can get session use this bot - * [![Run on Repl.it](https://replit.com/badge/github/TeamUltroid/Ultroid)](https://replit.com/@vcsession/VCPlayBot?v=1)
 
-<p align="center">
-  <img src="https://telegra.ph/file/dd04b1968f1bc1169d162.jpg">
-</p>
 
+
+### Deploy to Heroku 🔥🕺 
+
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/youtubeslgeekshow/yakari-music)
+
+###              The easiest way to deploy this Song Bot
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/youtubeslgeekshow/yakari-music"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
+
+
+###   <a href="https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA?sub_confirmation=1"><img src="https://img.shields.io/badge/How%20To-Deploy-red.svg?logo=Youtube"></a>
+###  🧙‍♀️ Deploy Guide
+<a href="https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA?sub_confirmation=1"><img src="https://telegra.ph/file/beca543cd87ec72be6069.jpg"></a>
+
+### Developer :
+
+### [slbotzone](https://t.me/slbotzone)
+
+<img align="left" src="https://github.com/RazorKenway/RazorKenway/raw/main/Developer.gif" style="max-width:100%;">
+
+[![Youtube](https://img.shields.io/badge/YouTube%20Channel-ff0000?style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=youtube)](https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA?sub_confirmation=1)&nbsp;
+[![Telegram](https://img.shields.io/badge/slbotzone%20Team-003245?style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=telegram)](https://t.me/slbotzone)&nbsp;
+[![Facebook](https://img.shields.io/badge/Follow%20me%20on%20Facebook-2533cf?style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=facebook)](https://www.facebook.com/SL-Geek-Show-yt-103654258471929/)&nbsp;
+[![Intagram](https://img.shields.io/badge/Follow%20me%20on%20Instagram-4d267a?style=style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=instagram)](https://www.instagram.com/sl_geek_show/)&nbsp;
+[![Github](https://img.shields.io/badge/Github-000000?style=style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=github)](https://github.com/youtubeslgeekshow) 
+
+<p align="right">
+  <a href="https://t.me/AsmSafone"><img src="https://user-images.githubusercontent.com/77770753/117139498-f081c400-adc9-11eb-9aaf-f895a54ecc67.gif"></a>
+    </p>
+    
 <h2> Features 🔥 </h2>
 
 - Thumbnail Support
@@ -24,37 +48,14 @@
 - Channel Music Play
 - Keyboard selection support for youtube play
 
-## 🚀 Deployment
 
-### 💜 Heroku
+## How to use the bot
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TeamDaisyX/DaisyXMusic/tree/legacy)
-
-Get pyrogram (p)  `SESSION` from here:
-[![Run on Repl.it](https://repl.it/badge/github/SpEcHiDe/GenerateStringSession)](https://repl.it/@SpEcHiDe/GenerateStringSession)
-
-### ⚔ Self-hosting (For Devs) 
-```sh
-# Install Git First (apt-instll git)
-$ git clone https://github.com/TeamDaisyX/DaisyXmusic
-$ cd DaisyXMusic
-# Upgrade sources
-# Install All Requirements 
-$ pip(3) install -r requirements.txt
-# Rename example.env to local.env and fill
-$ npm i -g npm
-# Start Bot 
-$ python(3) -m DaisyXMusic
-```
-
-### Commands for Group 🛠
-#### For all in group
+#### All Users
 
 - `/play <song name>` - play song you requested
-- `/play <reply to audio>` - play replied file
 - `/dplay <song name>` - play song you requested via deezer
 - `/splay <song name>` - play song you requested via jio saavn
-- `/ytplay <song name>`: Directly play song via Youtube Music
 - `/playlist` - Show now playing list
 - `/current` - Show now playing
 - `/song <song name>` - download songs you want quickly
@@ -63,7 +64,7 @@ $ python(3) -m DaisyXMusic
 - `/saavn <song name>` - download songs you want quickly via saavn
 - `/video <song name>` - download videos you want quickly
 
-#### Admins only.
+#### Admins only
 - `/player` - open music player settings panel
 - `/pause` - pause song play
 - `/resume` - resume song play
@@ -72,7 +73,7 @@ $ python(3) -m DaisyXMusic
 - `/userbotjoin` - invite assistant to your chat
 - `/userbotleave` - remove assistant from your chat
 - `/admincache` - Refresh admin list
-- `/musicplayer [on/off]` - Enable/Disable Music Player
+
 
 ### Commands for Channel Music Play 🛠
 For linked group admins only:
@@ -94,7 +95,7 @@ For linked group admins only:
 If you donlt like to play in linked channel:
  1. Get your channel ID.
  2. Rename your group to: Channel Music: your_channel_id
- 3. Add @DaisyXBot as Channel admin with full perms
+ 3. Add yakari as Channel admin with full perms
  4. add helper to channel
  5. Simply send commands in your group.
 
@@ -108,26 +109,19 @@ If you donlt like to play in linked channel:
 - `.da` - disapproove someone to pm you
 + Sudo Users can execute any command in any groups
 
-### Credits
-Don't edit this part
 
-#### Special Credits
-- [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
 
-This bot is based on the original work done by [Rojserbest](http://github.com/rojserbest). Without his hardwork daisyxmusic won't exist. 
-DaisyXmusic is a modified version of [Callsmusic](https://github.com/callsmusic/callsmusic) for fit the needs of @DaisyXbot users
-
-#### Contribtors
+## Credits
 - [InukaASiTH](https://github.com/InukaAsith): Dev
 - [Technical-Hunter](https://github.com/Technical-Hunter): Dev
-- [Rojserbest](http://github.com/rojserbes): Dev
+- [Rojserbest](http://github.com/rojserbest): Dev
 - [Wrench](https://github.com/EverythingSuckz/): Dev
 - [Bemro](https://github.com/bemroofficial): Dev
 - [QueenArzoo](https://github.com/QueenArzoo): Dev
 - [lucifeermorningstar](https://github.com/lucifeermorningstar): Dev
-- [AuraXNetwork](https://github.com/AuraXNetwork/AuraXMusicBot)
-- [Hamker Cat](https://github.com/thehamkercat/)
-- [Anjana-Ma](https://github.com/Anjana-Ma): 
+- [HamkerCat](https://github.com/thehamkercat/)
+- [AnjanaMadu](https://github.com/AnjanaMadu): 
 - [ImJanindu](https://github.com/ImJanindu): 
-- [Laky](https://github.com/Laky-64) & [Andrew](https://github.com/AndrewLaneX): PyTgCalls
-- [Original Repo owners](https://github.com/suprojects/CallsMusic)
+- [MARSHALX](https://github.com/MarshalX): TgCalls
+- [Original Repo owners](https://github.com/CallsMusic/CallsMusic)
+
