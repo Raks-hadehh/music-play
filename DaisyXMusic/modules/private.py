@@ -30,7 +30,7 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ Add me to your Group 🎙 ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
                         "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
@@ -38,7 +38,7 @@ def _start(client, message):
                         "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                        "user manual 📜 ", url=f"https://{SOURCE_CODE}")
                 ]
             ]
         ),
@@ -47,13 +47,14 @@ def _start(client, message):
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
+    await message.reply_sticker("CAACAgUAAxkBAAELnD5g77fEZrKBQ2gKEfMWNXe9Jzr5vQAC9gADeg_uHoANaWxyHZA6HgQ")
     await message.reply_text(
-        f"""**🔴 {PROJECT_NAME} is online**""",
+        f"""**🎧  Yakari music play services - Made by - @slbotzone 📛  Telegram UserBot to Play Audio in Telegram Voice Chats 🎙 Stay safe 😷  & enjoy 🥳 **""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "⚡️  Developer", url=f"https://t.me/supunma"
                     )
                 ]
             ]
@@ -110,8 +111,9 @@ def map(pos):
 
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
+    await message.reply_sticker("CAACAgUAAxkBAAELnD5g77fEZrKBQ2gKEfMWNXe9Jzr5vQAC9gADeg_uHoANaWxyHZA6HgQ")
     await message.reply_text(
-        f"""**🙋‍♀️ Hello there! I can play music in the voice chats of telegram groups & channels.**""",
+        f"""**🎧  Yakari music play services - Made by - @slbotzone 📛  Telegram UserBot to Play Audio in Telegram Voice Chats 🎙 Stay safe 😷  & enjoy 🥳**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
