@@ -33,12 +33,12 @@ def _start(client, message):
                         "➕ Add me to your Group 🎙 ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "🔔 Bot update Channel", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "👨‍💻 Bot support group", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "user manual 📜 ", url=f"https://{SOURCE_CODE}")
+                        "🧑‍🔧 HOW TO USE THIS BOT ", url=f"https://telegra.ph/HOW-TO-USE-YAKARI-VC-PLAY-BOT-07-15")
                 ]
             ]
         ),
@@ -95,9 +95,9 @@ def map(pos):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
             [InlineKeyboardButton("➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '📲 Updates', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             InlineKeyboardButton(text = '💬 Support', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton(text = '🔔 Bot update Channel', url=f"https://t.me/{UPDATES_CHANNEL}"),
+             InlineKeyboardButton(text = '👨‍💻 Bot support group', url=f"https://t.me/{SUPPORT_GROUP}")],
+            [InlineKeyboardButton(text = '🛠 Source Code 🛠', url=f"https://github.com/youtubeslgeekshow/yakariTG-vc-music-play-bot")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -118,7 +118,7 @@ async def ghelp(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🟡 Click here for help 🟡", url=f"https://t.me/{BOT_USERNAME}?start"
+                        "⚡️  Developer", url=f"https://t.me/supunma"
                     )
                 ]
             ]
