@@ -30,6 +30,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Voice
 from pyrogram.errors import UserAlreadyParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+from pyrogram.errors import UserNotParticipant, ChatAdminRequired, UsernameNotOccupied
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
 
@@ -50,6 +51,14 @@ from DaisyXMusic.services.callsmusic import callsmusic, queues
 from DaisyXMusic.services.callsmusic.callsmusic import client as USER
 from DaisyXMusic.services.converter.converter import convert
 from DaisyXMusic.services.downloaders import youtube
+
+JOIN_ASAP = "<b>You Need To Join My For Executing This Command...</b>"
+
+FSUBB = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton(text="Join My Channel", url=f"https://t.me/sl_bot_zone")
+        ]]
+    )
 
 aiohttpsession = aiohttp.ClientSession()
 chat_id = None
@@ -452,6 +461,13 @@ async def m_cb(b, cb):
 
 @Client.on_message(command("play") & other_filters)
 async def play(_, message: Message):
+    try:
+        await message._client.get_chat_member(int("-1001325914694"), message.from_user.id)
+    except UserNotParticipant:
+        await message.reply_text(
+        text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
+    )
+        return
     global que
     global useer
     if message.chat.id in DISABLED_GROUPS:
