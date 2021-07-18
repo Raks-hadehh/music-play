@@ -52,11 +52,11 @@ from DaisyXMusic.services.callsmusic.callsmusic import client as USER
 from DaisyXMusic.services.converter.converter import convert
 from DaisyXMusic.services.downloaders import youtube
 
-JOIN_ASAP = "<b>You Need To Join My For Executing This Command...</b>"
+JOIN_ASAP = "<b>You Need To Join My For Executing This Command 👮‍♀️  ඔයා මෙම එක භාවිතා කිරිමට පෙර එක හා සම්බන්ධ විය යුතුය         ...</b>"
 
 FSUBB = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="Join My Channel", url=f"https://t.me/sl_bot_zone")
+        InlineKeyboardButton(text="Join My Channel 🔔 ", url=f"https://t.me/sl_bot_zone")
         ]]
     )
 
