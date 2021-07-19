@@ -17,7 +17,7 @@
 import os
 from DaisyXMusic.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**I  I am advance music play bot in telegram voice chat 🎃                                             I can play music in voice chats of Telegeam Groups & Channels.                                                            I have a lot of cool feature that will amaze you!                                                                       To add in your group contact me at @sl_bot_zone .                                                   Hit  /help  list of available commands.."
+      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**I  I am advance music play bot in telegram voice chat 🎃                                        I can play music in voice chats of Telegeam Groups & Channels.                                              I have a lot of cool feature that will amaze you!                                                 To add in your group contact me at @sl_bot_zone .                                                   Hit  /help  list of available commands.."
       HELP_MSG = [
         ".",
 f"""
