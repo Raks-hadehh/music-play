@@ -52,7 +52,7 @@ from DaisyXMusic.services.callsmusic.callsmusic import client as USER
 from DaisyXMusic.services.converter.converter import convert
 from DaisyXMusic.services.downloaders import youtube
 
-JOIN_ASAP = "<b>You Need To Join My For Executing This Command 👮‍♀️  ඔයා මෙම එක භාවිතා කිරිමට පෙර එක හා සම්බන්ධ විය යුතුය         ...</b>"
+JOIN_ASAP = "<b>You Need To Join My channel For Executing This Command 👮‍♀️  ඔයා මෙම command එක භාවිතා කිරිමට පෙර එක හා සම්බන්ධ විය යුතුය         ...</b>"
 
 FSUBB = InlineKeyboardMarkup(
         [[
@@ -1076,7 +1076,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                        "\n\nOr manually add @vcpalyassistantto your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
