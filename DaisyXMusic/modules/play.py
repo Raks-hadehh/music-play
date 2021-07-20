@@ -56,10 +56,8 @@ JOIN_ASAP = "<b>You Need To Join My channel For Executing This Command 👮‍�
 
 FSUBB = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text=" 1️⃣ subscribe us 📣 ", url=f"https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA?sub_confirmation=1")
-        ]],
-        [[
-        InlineKeyboardButton(text=" 2️⃣ Join My Channel 🔔 ", url=f"https://t.me/sl_bot_zone")        
+        InlineKeyboardButton(text="  Join My Channel 🔔 ", url=f"https://t.me/sl_bot_zone") 
+        ]]      
     )
 
 aiohttpsession = aiohttp.ClientSession()
