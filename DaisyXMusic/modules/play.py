@@ -52,12 +52,14 @@ from DaisyXMusic.services.callsmusic.callsmusic import client as USER
 from DaisyXMusic.services.converter.converter import convert
 from DaisyXMusic.services.downloaders import youtube
 
-JOIN_ASAP = "<b>You Need To Join My channel For Executing This Command 👮‍♀️  ඔයා මෙම command එක භාවිතා කිරිමට පෙර එක හා සම්බන්ධ විය යුතුය         ...</b>"
+JOIN_ASAP = "<b>You Need To Join My channel For Executing This Command 👮‍♀️  @sl_bot_zone     ...</b>"
 
 FSUBB = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="Join My Channel 🔔 ", url=f"https://t.me/sl_bot_zone")
-        ]]
+        InlineKeyboardButton(text=" 1️⃣ subscribe us 📣 ", url=f"https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA?sub_confirmation=1")
+        ]],
+        [[
+        InlineKeyboardButton(text=" 2️⃣ Join My Channel 🔔 ", url=f"https://t.me/sl_bot_zone")        
     )
 
 aiohttpsession = aiohttp.ClientSession()
@@ -71,7 +73,7 @@ def cb_admin_check(func: Callable) -> Callable:
         if cb.from_user.id in admemes:
             return await func(client, cb)
         else:
-            await cb.answer("You ain't allowed!", show_alert=True)
+            await cb.answer("You arn't allowed!", show_alert=True)
             return
 
     return decorator
