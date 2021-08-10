@@ -30,15 +30,14 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group 🎙 ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "ᴄᴀʀᴀ ᴍᴇᴍᴀᴋᴀɪ ʙᴏᴛ", url=f"https://t.me/rakasupport/12")],
                 [
                     InlineKeyboardButton(
-                        "🔔 Bot update Channel", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "💌 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{SUPPORT_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "👨‍💻 Bot support group", url=f"https://t.me/{SUPPORT_GROUP}")
-                ],[
+                        "🎯 ɢʀᴏᴜᴘ", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton(
-                        "🧑‍🔧 HOW TO USE THIS BOT ", url=f"https://telegra.ph/HOW-TO-USE-YAKARI-VC-PLAY-BOT-07-15")
+                        "🔱 ᴏᴡɴᴇʀ ɢᴀɴᴛᴇɴɢ 🔱", url=f"https://t.me/rakaaanjayy")
                 ]
             ]
         ),
@@ -47,14 +46,13 @@ def _start(client, message):
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAELnD5g77fEZrKBQ2gKEfMWNXe9Jzr5vQAC9gADeg_uHoANaWxyHZA6HgQ")
     await message.reply_text(
-        f"""**🎧  Yakari music play services - Made by - @slbotzone 📛  Telegram UserBot to Play Audio in Telegram Voice Chats 🎙 Stay safe 😷  & enjoy 🥳 **""",
+        f"""**🔴 {PROJECT_NAME} telah diaktifkan**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⚡️  Developer", url=f"https://t.me/supunma"
+                        "🔱 ᴏᴡɴᴇʀ ɢᴀɴᴛᴇɴɢ 🔱", url=f"https://t.me/rakaaanjayy"
                     )
                 ]
             ]
@@ -89,39 +87,38 @@ def help_answer(client, callback_query):
 def map(pos):
     if(pos==1):
         button = [
-            [InlineKeyboardButton(text = '▶️', callback_data = "help+2")]
+            [InlineKeyboardButton(text = 'Next', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
-            [InlineKeyboardButton("➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '🔔 Bot update Channel', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             InlineKeyboardButton(text = '👨‍💻 Bot support group', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🛠 Source Code 🛠', url=f"https://github.com/youtubeslgeekshow/yakariTG-vc-music-play-bot")],
-            [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
+            [InlineKeyboardButton("ᴄᴀʀᴀ ᴍᴇᴍᴀᴋᴀɪ ʙᴏᴛ", url=f"https://t.me/rakasupport/12")],
+            [InlineKeyboardButton(text = '💌 ᴄʜᴀɴɴᴇʟ', url=f"https://t.me/{SUPPORT_CHANNEL}"),
+             InlineKeyboardButton(text = '🎯 ɢʀᴏᴜᴘ', url=f"https://t.me/{SUPPORT_GROUP}")],
+            [InlineKeyboardButton(text = '🤡 ᴏᴡɴᴇʀ', url=f"https://t.me/{OWNER_USERNAME}"),
+             InlineKeyboardButton(text = '🔱 ᴏᴡɴᴇʀ ɢᴀɴᴛᴇɴɢ 🔱 ', url=f"https://t.me/rakaaanjayy")],
+            [InlineKeyboardButton(text = 'Kembali', callback_data = f"help+{pos-1}")]
         ]
     else:
         button = [
             [
-                InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}"),
-                InlineKeyboardButton(text = '▶️', callback_data = f"help+{pos+1}")
+                InlineKeyboardButton(text = 'Kembali', callback_data = f"help+{pos-1}"),
+                InlineKeyboardButton(text = 'Next', callback_data = f"help+{pos+1}")
             ],
         ]
     return button
 
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAELnD5g77fEZrKBQ2gKEfMWNXe9Jzr5vQAC9gADeg_uHoANaWxyHZA6HgQ")
     await message.reply_text(
-        f"""**🎧  Yakari music play services - Made by - @slbotzone 📛  Telegram UserBot to Play Audio in Telegram Voice Chats 🎙 Stay safe 😷  & enjoy 🥳**""",
+        f"""**🤖 ʜᴀʟʟᴏ ᴊᴀᴍᴇᴛ ɢᴜᴀ ᴍᴜsɪᴄ ʙᴏᴛ ʏᴀɴɢ ᴀᴋᴀɴ ᴍᴇʀɪᴀʜᴋᴀɴ ɢʀᴏᴜᴘ ᴀɴᴅᴀ.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⚡️  Developer", url=f"https://t.me/supunma"
+                        "📮 ᴋʟɪᴄᴋ ʙɪᴀʀ ɢᴀ ʙᴇɢᴏ", url=f"https://t.me/rakasupport/12"
                     )
                 ]
             ]
         ),
     )
-
